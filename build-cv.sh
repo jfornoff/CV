@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pdflatex -output-directory build lebenslauf.tex
+pdflatex -output-directory build CV.tex
