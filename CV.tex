@@ -1,0 +1,168 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[ngerman]{babel}
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jan}{Fornoff}
+\address{Amselweg 66}{64295 Darmstadt}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{0163 4684860}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{06152 8553965}
+%\phone[fax]{+3~(456)~789~012}
+\email{janfornoff@gmail.com}
+\title{Lebenslauf}                               % optional, remove / comment the line if not wanted
+                           % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\pagestyle{empty}
+
+\section{Bildung}
+\cventry{2007--2010}{Berufliches Gymnasium Groß-Gerau}{Allgemeine Hochschulreife}{}{Durchschnittsnote \textit{1,5}}{Schwerpunkt Datenverarbeitung / Elektrotechnik, Leistungskurs Mathematik}  % arguments 3 to 6 can be left empty
+\cventry{2011--2016}{TU Darmstadt}{BSc Wirtschaftsinformatik}{}{Durchschnittsnote \textit{2,27}}{Bachelorarbeit: \emph{Optimization and Evaluation of MPEG DASH Video Streaming by large-scale Network Simulation} (Note 1,0)}{}{}
+\cventry{2016--jetzt}{TU Darmstadt}{MSc Wirtschaftsinformatik}{}{}{}{}{}
+
+\section{Wissenschaftliche Publikationen}
+\cventry{}{Denny Stohr, Alexander Fr"ommgen, Jan Fornoff et al.}{\emph{QoE Analysis of DASH Cross-Layer Dependencies by Extensive Network Emulation }}{}{ACM SIGCOMM 2016}{}
+\cventry{}{Alexander Fr"ommgen, Denny Stohr, Jan Fornoff et al.}{\emph{Capture and Replay: Reproducible Network Experiments in Mininet}}{}{ACM SIGCOMM 2016}{}
+
+\section{Berufserfahrung}
+\cventry{Jul. 2010--Nov. 2010}{Aushilfe Research \& Development Goldwell}{KPSS GmbH}{Eberstadt}{}{}
+\cventry{Nov. 2010--Apr. 2011}{Zivildienst}{DRK Menüservice (Fahrdienst)}{}{}{}%
+\cventry{Aug. 2011--Okt. 2011}{Studienpraktikum}{Software AG}{Eberstadt}{}{}
+\cventry{Okt. 2011--jetzt}{Werkstudent}{Software AG}{Eberstadt}{}{Entwicklung von Infrastruktur-Webanwendungen \newline{}%
+\begin{itemize}
+\item Weiterentwicklung von Webanwendungen zum Vertragsmanagement
+\item Automation der Generierung von Non-Disclosure Agreements
+\item Entwicklung von Webanwendung zur Erstellung dynamisch konfigurierbarer Fragebögen
+\item Serverwartung, Deployment \& Monitoring von Applikationen
+\end{itemize}}
+
+\section{Sonstige Erfahrung}
+\cventry{}{}{Projekt im Rahmen von Studienmodul "'IT-Projektmanagement"'}{Invensity GmbH (Wiesbaden)}{}{Entwicklung von HTML5-Applikation zur Erfassung von Kundenmeinungen (AngularJS - Frontend, Laravel - Backend)}
+
+\medskip
+
+\cventry{}{}{Chatbot für asynchrone Standupmeetings}{\href{https://docs.google.com/presentation/d/1EwYcrZ7avlwdU9C6yntaoqN5ANCbapg_Gp7QJqb5ACo/pub?slide=id.p}{Link zu Meetup-Präsentation}}{}{Entwicklung von Chatbot auf der Plattform "'Slack"', der asynchrone Standupmeetings zu nutzerkonfigurierten Zeitpunkten per Direktnachricht durchführt und formatierte Reports in einen Statuschatroom postet. (Elixir / OTP)}
+
+\section{Sprachen}
+\cvitemwithcomment{Englisch}{fließend in Wort und Schrift}{}
+\cvitemwithcomment{Deutsch}{Muttersprache}{}
+
+\section{Technische Kenntnisse}
+\subsection{Programmiersprachen}
+\cvdoubleitem{Fortgeschritten}{
+\begin{itemize}
+\item Ruby
+\item Elixir
+\item Elm
+\item JavaScript
+\item LaTeX
+\item PHP
+\item HTML5
+\end{itemize}}
+{Grundlagen}{
+\begin{itemize}
+\item Haskell
+\item Python
+\item Go
+\item Rust
+\item Java
+\item C(++)
+\item Assembler
+\item R
+\end{itemize}}
+\subsection{Weiteres}
+\cvdoubleitem{Tools}
+{
+\begin{itemize}
+\item Git
+\item Docker
+\item Rancher
+\item Dokku
+\item Gitlab CI
+\item Capistrano
+\end{itemize}
+}
+{Frameworks}
+{
+\begin{itemize}
+\item Ruby on Rails
+\item node.js / Express
+\item ReactJS
+\item Laravel
+\end{itemize}
+}
+
+\medskip
+
+\cvdoubleitem{Datenbanken}
+{
+\begin{itemize}
+\item MySQL
+\item PostgreSQL
+\item Redis
+\end{itemize}
+}
+{}
+{}
+
+\section{Technische Interessen}
+\cvlistitem{Webtechnologien \& Future Internet}
+\cvlistitem{Big Data, Data Mining \& statistische Analyse}
+\cvlistitem{Agile Methoden \& Test-Driven Development}
+\cvlistitem{Continuous Integration \& DevOps}
+
+\section{Hobbys}
+\cvlistitem{
+Sport
+\begin{itemize}
+  \item Handball (HSG Dornheim / Groß-Gerau)
+  \item Krafttraining
+\end{itemize}
+}
+\cvlistitem{Kochen}
+
+\end{document}
+%% end of file `template.tex'.

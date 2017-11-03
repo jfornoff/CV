@@ -1,0 +1,11 @@
+stages:
+  - build
+
+compile-cv:
+  stage: build
+  image: blang/latex
+  script:
+    - bash build-cv.sh
+  artifacts:
+    paths:
+      - "build/CV.pdf"
